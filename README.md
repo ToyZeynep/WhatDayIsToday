@@ -12,7 +12,6 @@
 - What Day Is Today button gives full date
 - The date on the top label as you can see from the buttons
  
-
 ## Screen Shots <a name="ScreenShots"></a>
 <img src="https://user-images.githubusercontent.com/75203610/148232194-0b9f9184-5289-4f37-8aaf-2d8a2f9a3751.png" width=250 height=480></td>
  
