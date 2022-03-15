@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatDayIsItToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aB9-S5-GRk">
+                                <rect key="frame" x="20" y="109" width="374" height="96"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSq-Dc-mHR">
+                                <rect key="frame" x="20" y="274" width="75" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="6HS-0B-qtQ"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Day">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79S-2T-S8J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLD-TZ-St3">
+                                <rect key="frame" x="103" y="274" width="87" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="CUd-YY-xyR"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Month">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="monthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zih-Ff-jhy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9G-ME-bsw">
+                                <rect key="frame" x="198" y="274" width="87" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="5CD-2p-DvR"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Year">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="yearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wJG-ti-RKl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnU-yL-NO7">
+                                <rect key="frame" x="71" y="413" width="278" height="71"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="What Day Is Today">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="23"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="todayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZN-b7-wjy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0L-an-S4B">
+                                <rect key="frame" x="293" y="274" width="101" height="48"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="WeekDay">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="weekDayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fod-lz-7DE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aB9-S5-GRk" firstAttribute="leading" secondItem="uSq-Dc-mHR" secondAttribute="leading" id="1sY-CQ-i92"/>
+                            <constraint firstItem="uSq-Dc-mHR" firstAttribute="top" secondItem="aB9-S5-GRk" secondAttribute="bottom" constant="69" id="2kI-4S-ofn"/>
+                            <constraint firstItem="NLD-TZ-St3" firstAttribute="baseline" secondItem="uSq-Dc-mHR" secondAttribute="firstBaseline" id="338-nY-VFB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gnU-yL-NO7" secondAttribute="trailing" constant="65" id="3iW-1s-tQa"/>
+                            <constraint firstItem="aB9-S5-GRk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E6d-GH-idy"/>
+                            <constraint firstItem="Y9G-ME-bsw" firstAttribute="top" secondItem="g0L-an-S4B" secondAttribute="top" id="Kge-En-m9v"/>
+                            <constraint firstItem="g0L-an-S4B" firstAttribute="leading" secondItem="Y9G-ME-bsw" secondAttribute="trailing" constant="8" id="OWp-Xj-lGJ"/>
+                            <constraint firstItem="NLD-TZ-St3" firstAttribute="baseline" secondItem="Y9G-ME-bsw" secondAttribute="baseline" id="XKW-EQ-2pI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gnU-yL-NO7" secondAttribute="bottom" constant="378" id="YZP-y2-sLJ"/>
+                            <constraint firstItem="aB9-S5-GRk" firstAttribute="trailing" secondItem="g0L-an-S4B" secondAttribute="trailing" id="e6K-pp-I8y"/>
+                            <constraint firstItem="aB9-S5-GRk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eA5-aP-dv6"/>
+                            <constraint firstItem="uSq-Dc-mHR" firstAttribute="baseline" secondItem="NLD-TZ-St3" secondAttribute="baseline" id="eUw-kX-jNb"/>
+                            <constraint firstItem="gnU-yL-NO7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="ghu-eo-dPx"/>
+                            <constraint firstItem="Y9G-ME-bsw" firstAttribute="bottom" secondItem="g0L-an-S4B" secondAttribute="bottom" id="gjU-dW-r3m"/>
+                            <constraint firstItem="gnU-yL-NO7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iVd-H0-tSf"/>
+                            <constraint firstItem="aB9-S5-GRk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="k0M-qK-gIw"/>
+                            <constraint firstItem="gnU-yL-NO7" firstAttribute="top" secondItem="uSq-Dc-mHR" secondAttribute="bottom" constant="91" id="qIZ-IS-ih9"/>
+                            <constraint firstItem="Y9G-ME-bsw" firstAttribute="leading" secondItem="NLD-TZ-St3" secondAttribute="trailing" constant="8" id="qaS-dM-IS5"/>
+                            <constraint firstItem="NLD-TZ-St3" firstAttribute="leading" secondItem="uSq-Dc-mHR" secondAttribute="trailing" constant="8" id="yxq-Ib-42K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="aB9-S5-GRk" id="QdF-U2-IP9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
